@@ -1,0 +1,24 @@
+{
+  "name": "diettailor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.9",
+    "next": "^15.1.2",
+    "prop-types": "^15.8.1",
+    "react": "^19.0.0",
+    "react-alice-carousel": "^2.9.1",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}
