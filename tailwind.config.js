@@ -6,8 +6,10 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
-      md: { max: "1050px" },
-      sm: { max: "550px" }
+      sm: { max: "640px" },
+      md: { max: "768px" },
+      sc: { min:"0px" ,max: "640px" },
+      bc: { max: "1536px" },
     },
     extend: {
       colors: {
@@ -90,8 +92,9 @@ module.exports = {
         xs: "0 2px 24px 2px #1d202405"
       },
       fontFamily: {
-        manrope: "Manrope",
-        inter: "Inter"
+        sans: ['Open Sans', 'sans-serif'], 
+        // manrope: "Manrope",
+        // inter: "Inter"
       },
       backgroundImage: {
         gradient: "linear-gradient(90deg, #e9d7ff, #ffffff00, #28242d)",

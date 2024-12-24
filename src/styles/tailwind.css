@@ -130,6 +130,6 @@ select:focus {
 @layer components {
   /*------------------------------------- Container CSS --------------------------------------*/
   .container-xs {
-    @apply w-full mx-auto max-w-[1058px];
+    @apply w-full mx-auto sc:max-w-[100vw] max-w-[80vw];
   }
 }

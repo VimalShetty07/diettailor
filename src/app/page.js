@@ -42,8 +42,8 @@ const featuredBlogsList = [
 
 export default function Page() {
   return <div className="w-full">
-  <div className="flex flex-col items-center gap-[100px] bg-background-white md:gap-[75px] sm:gap-[50px]">
-    <div className="container-xs mt-3.5 md:px-5">
+  <div className="flex flex-col items-center gap-[100px] bg-background-white md:gap-[75px] sm:gap-[50px] w-[90vw] mx-auto">
+    <div className="container-xs mt-3.5">
       <div className="flex flex-col gap-24 sm:gap-8">
         <Header />
         <div className="flex flex-col gap-12">
