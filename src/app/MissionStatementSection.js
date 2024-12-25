@@ -76,7 +76,7 @@ export default function MissionStatementSection() {
 
                         {/* Hero Image */}
                         <Img
-                            src="cheff.jpg"
+                            src="plate.jpeg"
                             width={486}
                             height={446}
                             alt="Hero Image"

@@ -73,11 +73,10 @@ export default function Page() {
       </div>
       <div className="flex flex-col items-center gap-[100px] bg-background-white md:gap-[75px] sm:gap-[50px] w-[90vw] mx-auto">
         <div className="container-xs  mt-3.5">
-          
           <MissionStatementSection />
-          <div className="container-xs h-[100vh] md:px-5">
+          {/* <div className="container-xs h-[100vh] md:px-5">
             <div className="flex flex-col items-center gap-[30px]">
-              {/* <div className="relative h-[30px] w-[6%] content-center rounded-[14px] border border-solid border-deep_purple-50_01 bg-gradient md:h-auto">
+              <div className="relative h-[30px] w-[6%] content-center rounded-[14px] border border-solid border-deep_purple-50_01 bg-gradient md:h-auto">
                 <Img
                   src="img_noise_30x60.png"
                   width={60}
@@ -91,7 +90,7 @@ export default function Page() {
                 >
                   Services
                 </Text>
-              </div> */}
+              </div>
               <div className="flex flex-col items-center gap-6 self-stretch">
                 <Heading
                   as="p"
@@ -106,42 +105,42 @@ export default function Page() {
                     ))}
                   </Suspense>
                 </div>
-                {/* <div className="flex items-center gap-6">
-            <Button
-              shape="round"
-              className="min-w-[138px] rounded-[16px] px-[30px] font-medium tracking-[-0.96px] sm:px-5"
-            >
-              Contact Us
-            </Button>
-            <div className="flex items-center gap-2">
-              <Link href="#">
-                <Text
-                  size="texts"
-                  as="p"
-                  className="text-[16px] font-normal text-gray-900_01"
-                >
-                  View All
-                </Text>
-              </Link>
-              <Img
-                src="img_icon.svg"
-                width={24}
-                height={24}
-                alt="View Icon"
-                className="h-[24px]"
-              />
-              </div>
-              </div> */}
+                <div className="flex items-center gap-6">
+                  <Button
+                    shape="round"
+                    className="min-w-[138px] rounded-[16px] px-[30px] font-medium tracking-[-0.96px] sm:px-5"
+                  >
+                    Contact Us
+                  </Button>
+                  <div className="flex items-center gap-2">
+                    <Link href="#">
+                      <Text
+                        size="texts"
+                        as="p"
+                        className="text-[16px] font-normal text-gray-900_01"
+                      >
+                        View All
+                      </Text>
+                    </Link>
+                    <Img
+                      src="img_icon.svg"
+                      width={24}
+                      height={24}
+                      alt="View Icon"
+                      className="h-[24px]"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <FeaturesSection />
-          <TestimonialsSection/>
-          <ServicesSection/>
-              <CallToActionSection />
-          {/* <ClientShowcaseSection/> */}
-
+          </div> */}
           
+         
+          <FeaturesSection />
+          <TestimonialsSection />
+          <ServicesSection />
+          <CallToActionSection />
+          {/* <ClientShowcaseSection/> */}
         </div>
       </div>
       <Footer />
