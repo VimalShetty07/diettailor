@@ -16,14 +16,14 @@ import FeaturesSection from "./FeaturesSection";
 
 const featuredBlogsList = [
   {
-    healthcareButton: "Healthy Food Delivery",
+    healthcareButton: "Customized Meal Box",
     aiFutureText: "Revolutionizing Your Meal Experience",
     descriptionText:
       "Discover the convenience and benefits of healthy food delivery right at your doorstep. Learn how our service offers fresh, balanced meals tailored to your dietary needs, helping you maintain a healthy lifestyle without the hassle of cooking. Explore the future of nutritious meal delivery, providing you with the best options for your health goals",
     image: "consult/meal_delivery.jpg",
   },
   {
-    healthcareButton: "Consultation",
+    healthcareButton: "Pesonal Consultation",
     aiFutureText: "Personalized Guidance for Your Wellness Journey",
     descriptionText:
       "Unlock the power of personalized nutrition through expert consultations. Our team of nutritionists and dietitians will guide you on the best dietary choices tailored to your unique health goals. Learn how personalized advice can transform your health and empower you to live a better, balanced life.",
@@ -71,12 +71,12 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-[100px] bg-background-white md:gap-[75px] sm:gap-[50px] w-[90vw] mx-auto">
+      <div className="flex flex-col items-center gap-[100px] md:gap-[75px] sm:gap-[50px] w-[90vw] mx-auto">
         <div className="container-xs  mt-3.5">
           <MissionStatementSection />
-          {/* <div className="container-xs h-[100vh] md:px-5">
+          <div className="container-xs h-[100vh] md:px-5">
             <div className="flex flex-col items-center gap-[30px]">
-              <div className="relative h-[30px] w-[6%] content-center rounded-[14px] border border-solid border-deep_purple-50_01 bg-gradient md:h-auto">
+              {/* <div className="relative h-[30px] w-[6%] content-center rounded-[14px] border border-solid border-deep_purple-50_01 bg-gradient md:h-auto">
                 <Img
                   src="img_noise_30x60.png"
                   width={60}
@@ -90,7 +90,7 @@ export default function Page() {
                 >
                   Services
                 </Text>
-              </div>
+              </div> */}
               <div className="flex flex-col items-center gap-6 self-stretch">
                 <Heading
                   as="p"
@@ -133,7 +133,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
           
          
           <FeaturesSection />

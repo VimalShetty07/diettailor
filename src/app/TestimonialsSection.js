@@ -34,7 +34,7 @@ export default function TestimonialsSection() {
       clientRole: "Tips for Managing PCOD Through Diet",
     },
     {
-      clientImage: "special_menu/periods.jpg",
+      clientImage: "special_menu/pcod.jpg",
       testimonial:
         "1. Increase Anti-Inflammatory Foods: Include fatty fish (salmon, mackerel), nuts, seeds, ginger, turmeric, and leafy greens to reduce inflammation.<br/> 2. Consume Magnesium-Rich Foods: Opt for avocados, bananas, almonds, cashews, and spinach to relax muscles and ease cramps.<br/> 3. Focus on Calcium and Vitamin D: Eat dairy (or alternatives like almond milk), tofu, broccoli, and sesame seeds to support muscle relaxation and hormonal balance.<br/> 4. Stay Hydrated and Limit Caffeine: Drink plenty of water, herbal teas (chamomile, ginger), and avoid caffeine to reduce bloating and discomfort.<br/> 5. Opt for Complex Carbs and Fiber: Choose whole grains, sweet potatoes, and legumes to stabilize blood sugar and prevent energy crashes.<br/> 6. Avoid Processed Foods and Sugars: Reduce intake of refined carbs, sugary snacks, and processed foods to minimize inflammation and bloating.",
       clientName: "Period cramp",
@@ -57,7 +57,7 @@ export default function TestimonialsSection() {
               as="p"
               className="text-[48px] font-normal tracking-[-3.83px] text-gray-900_01 md:text-[44px] sm:text-[38px]"
             >
-              Key tips for managing diseases through diet
+              Key Tips For Managing Health Through Diet
             </Heading>
           </div>
 
