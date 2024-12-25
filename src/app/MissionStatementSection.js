@@ -49,11 +49,9 @@ export default function MissionStatementSection() {
                                     size="texts"
                                     as="p"
                                     className="w-full font-montserrat2 text-[16px] leading-[150%]"
-                                >
-                                    Introducing Diet Teller, your personalized nutrition partner designed to cater to your unique dietary needs. In today's fast-paced world, most people fall short of meeting their daily nutritional requirements. Whether you’re an active gym-goer or simply striving to maintain a healthy lifestyle, Diet Teller is here to ensure that you reach your nutritional goals effortlessly.
+                                >Why can’t we personalize our meals based on macronutrients rather than just ingredients? That’s the question that sparked the creation of Diet Tailor. While most meal services focus on flavors or specific foods, we realized the real need is deeper: personalizing meals to meet your body’s unique nutritional needs, not just your taste preferences.
 
-                                    Our program is tailored to fit your lifestyle and preferences, providing balanced, nutrition-packed meals that match your specific requirements. Whether you're looking for a keto diet, high-protein meals, low-fat options, or high-carbohydrate solutions, we’ve got it covered. We also offer plant-based protein meals and meat options to accommodate a wide range of dietary choices.
-
+                                At Diet Tailor, we go beyond the surface to deliver meals designed around the macronutrient balance you need to thrive. Whether you’re aiming for more protein, fewer carbs, or a balanced mix, we create delicious, hassle-free options that align perfectly with your personal health and fitness goals. We’re a team of nutrition enthusiasts, culinary experts, and wellness advocates committed to simplifying healthy living in an affordable way.
                                 </Text>
                             </div>
                             
