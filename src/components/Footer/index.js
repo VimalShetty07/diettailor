@@ -12,29 +12,27 @@ const Footer = () => {
               title="ABOUT Diet Tailor"
               links={[
                 {
-                  title: "Who We Are",
-                  href: "https://www.zomato.com/who-we-are",
+                  title: "Who Are We",
+                  href: "#about",
                 },
-                { title: "Blog", href: "https://blog.zomato.com/" },
+                { title: "Our Services", href: "#services" },
                 {
-                  title: "Work With Us",
-                  href: "https://www.zomato.com/careers",
+                  title: "Blog",
+                  href: "#blog",
                 },
                 {
-                  title: "Investor Relations",
-                  href: "https://www.zomato.com/investor-relations",
+                  title: "Work With Our Services",
+                  href: "",
                 },
               ]}
             />
             <FooterSection
-              title="Diet Tailor "
+              title="Diet Tailor Is Available On"
               links={[
                 { title: "Zomato", href: "https://www.zomato.com/" },
                 { title: "Blinkit", href: "https://blinkit.com/" },
-                {
-                  title: "Feeding India",
-                  href: "https://www.feedingindia.org/",
-                },
+                { title: "Swiggy", href: "https://swiggy.com/" },
+                
               ]}
             />
             <FooterSection
@@ -55,15 +53,15 @@ const Footer = () => {
               links={[
                 {
                   title: "Privacy",
-                  href: "https://www.zomato.com/policies/privacy/",
+                  href: "",
                 },
                 {
                   title: "Security",
-                  href: "https://www.zomato.com/policies/security/",
+                  href: "",
                 },
                 {
                   title: "Terms",
-                  href: "https://www.zomato.com/policies/terms/",
+                  href: "",
                 },
               ]}
             />

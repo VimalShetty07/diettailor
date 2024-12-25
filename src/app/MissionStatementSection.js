@@ -8,7 +8,7 @@ export default function MissionStatementSection() {
     return (
         <>
             {/* mission statement section */}
-            <div className="flex justify-center self-stretch">
+            <div id="about" className="flex justify-center self-stretch">
                 <div className="container-xs my-5 flex justify-center md:px-5">
                     <div className="flex w-full items-center gap-[30px] rounded-[32px] border border-solid border-blue_gray-50 bg-white-a700 px-5 py-[42px] md:flex-col md:py-5">
 

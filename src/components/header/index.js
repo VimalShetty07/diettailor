@@ -21,6 +21,14 @@ export default function Header({ ...props }) {
     }
   }, [isMenuOpen]);
 
+  // Extracted links array
+  const navLinks = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#services" },
+    { name: "Blog", href: "#blog" },
+  ];
+
   return (
     <header
       {...props}
@@ -42,14 +50,14 @@ export default function Header({ ...props }) {
 
       {/* Desktop Navigation */}
       <ul className="sc:hidden flex flex-wrap ">
-        {["Home", "About", "How it works", "Services"].map((item, index) => (
+        {navLinks.map((link, index) => (
           <li key={index}>
-            <Link href="#">
+            <Link href={link.href}>
               <Text
                 as="p"
                 className="font-manrope text-[16px] font-normal px-12 tracking-[-0.75px] !text-[#ffffff]"
               >
-                {item}
+                {link.name}
               </Text>
             </Link>
           </li>
@@ -121,14 +129,14 @@ export default function Header({ ...props }) {
 
         {/* Links in Drawer */}
         <ul className="flex flex-col items-start gap-8 mt-20 px-10 w-full">
-          {["Home", "About", "How it works", "Services"].map((item, index) => (
+          {navLinks.map((link, index) => (
             <li key={index}>
-              <Link href="#" onClick={toggleMenu}>
+              <Link href={link.href} onClick={toggleMenu}>
                 <Text
                   as="p"
                   className="text-xl font-manrope tracking-wide text-gray-800"
                 >
-                  {item}
+                  {link.name}
                 </Text>
               </Link>
             </li>

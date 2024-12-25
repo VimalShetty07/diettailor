@@ -43,31 +43,19 @@ export default function BlogFeature({
             <Heading
               size="textmd"
               as="p"
-              className="text-[20px] font-medium leading-6 tracking-[-0.75px] text-gray-900"
+              className="text-[20px] font-montserrat3 leading-6 tracking-[-0.75px] text-gray-900"
             >
               {aiFutureText}
             </Heading>
             <Text
               size="texts"
               as="p"
-              className="text-[16px] font-normal leading-[19px] tracking-[-0.96px] text-gray-600"
+              className="text-[16px] font-montserrat1 leading-[19px] tracking-[-0.20px] tracking-[-0.96px]"
             >
               {descriptionText}
             </Text>
           </div>
         </div>
-        {/* <div className="relative mt-[-4px] flex flex-col items-end">
-          <Link href="#">
-            <Text
-              size="texts"
-              as="p"
-              className="text-[16px] font-normal tracking-[-0.75px] text-gray-600"
-            >
-              {readMoreLink}
-            </Text>
-          </Link>
-          <div className="h-px w-[26%] bg-black-900" />
-        </div> */}
       </div>
     </div>
   );

@@ -33,7 +33,7 @@ const featuredBlogsList = [
     healthcareButton: "Monthly Meals Plan",
     aiFutureText: "Tailored Monthly Meal Plans for Optimal Health",
     descriptionText:
-      "Discover how a personalized monthly meal plan can transform your health journey. Our tailored meals are designed to meet your specific nutritional needs, promoting better energy levels, weight management, and overall well-being. Enjoy the convenience of healthy, balanced meals delivered right to your door, with options that cater to various dietary preferences and lifestyles. Let us help you stay on track with your health goals, one meal at a time.",
+      "Discover how a personalized monthly meal plan can transform your health journey. Our tailored meals are designed to meet your specific nutritional needs, promoting better energy levels, weight management, and overall well-being.",
     image: "consult/monthly_meal.jpg",
   },
 ];
@@ -42,7 +42,8 @@ export default function Page() {
   return (
     <div className="w-full">
       <div
-        className="flex flex-col gap-20 h-[100vh] text-white sm:gap-8"
+      id="home"
+        className=" flex flex-col gap-20 h-[100vh] text-white sm:gap-8"
         style={{
           backgroundImage: "url('/images/bg.jpg')",
           backgroundSize: "cover",
@@ -74,27 +75,13 @@ export default function Page() {
       <div className="flex flex-col items-center gap-[100px] md:gap-[75px] sm:gap-[50px] w-[90vw] mx-auto">
         <div className="container-xs  mt-3.5">
           <MissionStatementSection />
-          <div className="container-xs h-[100vh] md:px-5">
+          <div id="services" className="container-xs h-[80vh] md:px-5">
             <div className="flex flex-col items-center gap-[30px]">
-              {/* <div className="relative h-[30px] w-[6%] content-center rounded-[14px] border border-solid border-deep_purple-50_01 bg-gradient md:h-auto">
-                <Img
-                  src="img_noise_30x60.png"
-                  width={60}
-                  height={30}
-                  alt="Noise Image"
-                  className="h-[30px] flex-1 object-cover opacity-50"
-                />
-                <Text
-                  as="p"
-                  className="absolute bottom-0 right-[8.50px] top-0 my-auto h-max font-manrope text-[16px] font-normal tracking-[-0.75px] text-primary-purple_normal"
-                >
-                  Services
-                </Text>
-              </div> */}
+              
               <div className="flex flex-col items-center gap-6 self-stretch">
                 <Heading
                   as="p"
-                  className="text-[48px] font-normal tracking-[-3.83px] text-gray-900_01 md:text-[44px] sm:text-[38px]"
+                  className="text-[48px] font-montserrat3 tracking-[-2.83px] md:text-[44px] sm:text-[38px]"
                 >
                   Explore Our Services to Elevate Your Health and Wellness
                 </Heading>
@@ -105,40 +92,14 @@ export default function Page() {
                     ))}
                   </Suspense>
                 </div>
-                <div className="flex items-center gap-6">
-                  <Button
-                    shape="round"
-                    className="min-w-[138px] rounded-[16px] px-[30px] font-medium tracking-[-0.96px] sm:px-5"
-                  >
-                    Contact Us
-                  </Button>
-                  <div className="flex items-center gap-2">
-                    <Link href="#">
-                      <Text
-                        size="texts"
-                        as="p"
-                        className="text-[16px] font-normal text-gray-900_01"
-                      >
-                        View All
-                      </Text>
-                    </Link>
-                    <Img
-                      src="img_icon.svg"
-                      width={24}
-                      height={24}
-                      alt="View Icon"
-                      className="h-[24px]"
-                    />
-                  </div>
-                </div>
               </div>
             </div>
           </div>
           
          
-          <FeaturesSection />
+          {/* <FeaturesSection /> */}
           <TestimonialsSection />
-          <ServicesSection />
+          {/* <ServicesSection /> */}
           <CallToActionSection />
           {/* <ClientShowcaseSection/> */}
         </div>
