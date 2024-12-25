@@ -51,11 +51,11 @@ export default function TestimonialsSection() {
   return (
     <>
       <div id="blog" className="flex flex-col items-center justify-center min-h-screen">
-        <div className="container-xs flex flex-col items-center h-[90vh] gap-2.5 ">
-          <div className="flex w-[80%] py-5 flex-col items-center gap-2.5 md:w-full">
+        <div className="container-xs flex flex-col items-center min-h-[90vh] gap-2.5 md:gap-1 ">
+          <div className="flex w-[100%] flex-col items-center md:w-full">
             <Heading
               as="p"
-              className="text-[48px] font-montserrat4 tracking-[-1.83px] md:text-[44px] sm:text-[38px]"
+              className="text-[48px] mx-4 mt-5 font-montserrat4 tracking-[-1.83px] md:text-[44px] sm:text-[38px]"
             >
               Key Tips For Managing Health Through Diet
             </Heading>
@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
 
           {/* Slider Section */}
           <div className="flex flex-col gap-[50px] self-stretch">
-            <div className="relative h-[80vh] content-start md:h-auto">
+            <div className="relative min-h-[80vh] content-start md:h-auto">
               <div className="mx-auto flex w-full">
                 <Slider
                   autoPlay
@@ -81,15 +81,15 @@ export default function TestimonialsSection() {
                   ref={sliderRef}
                   items={sliderContent.map((slide, index) => (
                     <React.Fragment key={index}>
-                      <div className="flex gap-[46px] rounded-[32px] border border-solid border-blue_gray-50 bg-white-a700 p-6 md:flex-col sm:p-5">
+                      <div className="flex gap-[46px] md:gap-[20px] rounded-[32px] border border-solid border-blue_gray-50 bg-white-a700 p-6 md:px-6 md:flex-col">
                         <Img
                           src={slide.clientImage}
                           width={494}
                           height={334}
                           alt="Client Image"
-                          className="mb-5 mt-10 h-[334px] w-[52%] rounded-[16px] object-contain md:w-full"
+                          className="mb-5 mt-10 md:mt-0 md:mb-0 h-[334px] w-[52%] rounded-[16px] object-contain md:w-full"
                         />
-                        <div className="flex w-[46%] flex-col mt-10 items-end gap-3.5 md:w-full">
+                        <div className="flex w-[46%] flex-col mt-10 md:mt-0 items-start gap-3.5 md:gap-1 md:w-full">
                           <div className="flex flex-col gap-2 self-stretch">
                             <div className="flex gap-2 flex-col items-start">
                               <Text
@@ -125,7 +125,7 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Slider Navigation Buttons */}
-              <div className="absolute bottom-[100px] left-0 right-0 mx-11 flex flex-1 justify-end gap-[11px] md:mx-0">
+              <div className="relative left-0 right-0 mx-11 md:mb-10 flex flex-1 justify-end gap-[11px] md:mx-0">
                 <Button
                   color="deep_purple_400_a2"
                   size="md"

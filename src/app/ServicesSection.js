@@ -13,7 +13,7 @@ export default function ServicesSection() {
     <>
       {/* Services Section */}
       
-      <div className="relative h-[478px] content-center self-stretch md:h-auto">
+      <div className="relative min-h-[478px] content-center self-stretch md:h-auto">
         <div className="container-xs mx-auto flex w-full md:px-5">
           <Slider
             autoPlay

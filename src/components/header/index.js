@@ -32,7 +32,7 @@ export default function Header({ ...props }) {
   return (
     <header
       {...props}
-      className={`${props.className} flex flex-row relative  justify-between items-center px-5 py-3 sm:rounded-[28px] shadow-lg`}
+      className={`${props.className} flex flex-row relative  justify-between items-center px-5 py-6 xxl:py-3 md:rounded-[28px] md:mt-3 md:mx-2  md:h-[7vh] shadow-lg`}
       style={{
         background: 'rgba(25, 25, 25, 0.7)',
         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
@@ -45,17 +45,17 @@ export default function Header({ ...props }) {
         width={172}
         height={28}
         alt="Header Logo"
-        className="h-[28px] w-[172px] object-contain"
+        className="h-[28px] w-[172px] md:w-[75px] object-contain"
       />
 
       {/* Desktop Navigation */}
-      <ul className="sc:hidden flex flex-wrap ">
+      <ul className="md:hidden flex flex-wrap ">
         {navLinks.map((link, index) => (
           <li key={index}>
             <Link href={link.href}>
               <Text
                 as="p"
-                className="font-manrope text-[16px] font-normal px-12 tracking-[-0.75px] !text-[#ffffff]"
+                className="font-montserrat2 text-[24px] xxl:text-[16px] px-6 xxl:mx-2 mx-10 tracking-[-0.75px] !text-[#ffffff]"
               >
                 {link.name}
               </Text>
@@ -65,7 +65,7 @@ export default function Header({ ...props }) {
       </ul>
 
       <button
-        className="hidden sc:flex flex items-center justify-center p-2 text-white"
+        className="hidden md:flex flex items-center justify-center p-2 text-white"
         onClick={toggleMenu}
       >
         {isMenuOpen ? (
@@ -108,7 +108,7 @@ export default function Header({ ...props }) {
         } transition-transform duration-500 z-[100] flex flex-col justify-start items-start`}
       >
         <button
-          className="absolute top-5 right-5 p-2 rounded-full bg-gray-800 text-white shadow-md"
+          className="absolute top-5 right-5 p-2 rounded-full bg-[#ffffff] text-white shadow-md"
           onClick={toggleMenu}
         >
           <svg
@@ -134,7 +134,7 @@ export default function Header({ ...props }) {
               <Link href={link.href} onClick={toggleMenu}>
                 <Text
                   as="p"
-                  className="text-xl font-manrope tracking-wide text-gray-800"
+                  className="text-xl font-montserrat3 tracking-wide text-[#ffffff]"
                 >
                   {link.name}
                 </Text>
@@ -149,14 +149,14 @@ export default function Header({ ...props }) {
           className="mt-12 ml-10 min-w-[180px] px-10 py-4 text-lg tracking-[-0.96px] bg-gray-900 text-white"
           onClick={toggleMenu}
         >
-          Get App
+          Download App
         </Button>
       </div>
 
       {/* Desktop CTA Button */}
       <Button
         shape="round"
-        className="sc:hidden flex min-w-[136px] px-[30px] tracking-[-0.96px]"
+        className="md:hidden flex min-w-[136px] px-[30px] tracking-[-0.96px]"
       >
         Download App
       </Button>

@@ -54,17 +54,17 @@ export default function Page() {
         <Header />
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-12">
-            <div className="flex flex-col pt-20 mt-8 items-center gap-5">
+            <div className="flex flex-col mt-[22vh] xxl:mt-[13vh] justify-center items-center gap-9 xxl:gap-2 xl:gap-1">
               <Text
                 size="text2xl"
                 as="p"
-                className="self-stretch text-center tracking-wider text-[80px] leading-[87px] font-montserrat4 tracking-[-3.83px] !text-[#ffffff] md:text-[48px]"
+                className="self-stretch text-center tracking-wider text-[140px] xxl:text-[60px] leading-[87px] font-montserrat4 tracking-[-3.83px] !text-[#ffffff] md:text-[48px]"
               >
                 Diet Tailor
               </Text>
               <Text
                 as="p"
-                className="text-[36px] tracking-widest font-montserrat1 tracking-[-0.75px] !text-[#ffffff]"
+                className="text-[70px] xxl:text-[30px] tracking-widest sm:tracking-wider text-center font-montserrat1 tracking-[-0.75px] !text-[#ffffff]"
               >
                 Innovate your meal, Elevate your Life!!!
               </Text>
@@ -72,10 +72,10 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-[100px] md:gap-[75px] sm:gap-[50px] w-[90vw] mx-auto">
-        <div className="container-xs  mt-3.5">
+      <div className="relative max-w-[110rem] flex flex-col items-center gap-[100px] md:gap-[75px] sm:gap-[50px] w-[80vw] md:w-[100vw] px-25 mx-auto">
+        <div className="container-xs  mt-3.5 lg:mt-0">
           <MissionStatementSection />
-          <div id="services" className="container-xs h-[80vh] md:px-5">
+          <div id="services" className="container-xs min-h-[80vh] md:px-5">
             <div className="flex flex-col items-center gap-[30px]">
               
               <div className="flex flex-col items-center gap-6 self-stretch">
