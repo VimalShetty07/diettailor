@@ -93,7 +93,12 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'], 
-        // manrope: "Manrope",
+        montserrat1: "Montserrat Thin",
+        montserrat2: "Montserrat Light",
+        montserrat3: "Montserrat Regular",
+        montserrat4: "Montserrat SemiBold",
+        montserrat5: "Montserrat Bold",
+        montserrat6: "Montserrat ExtraBold",
         // inter: "Inter"
       },
       backgroundImage: {

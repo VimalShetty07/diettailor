@@ -1,109 +1,177 @@
-import Img from "../Img";
-import Text from "../Text";import Link from "next/link";
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-export default function Footer({ ...props }) {
+const Footer = () => {
   return (
-    <footer
-      {...props}
-      className={`${props.className} flex self-stretch bg-primary-purple_normal`}
-    >
-      <div className="h-[264px] w-full bg-[url(/images/img_footer_logo.png)] bg-cover bg-no-repeat p-[54px] md:h-auto md:p-5">
-        <div className="mt-[54px] flex flex-col gap-14 sm:gap-7">
-          <div className="flex items-start justify-between gap-5 sm:flex-col">
-            <Img
-              src="img_footer_logo.png"
-              width={172}
-              height={28}
-              alt="Footer Logo"
-              className="h-[28px] w-[172px] self-center object-contain"
+    <footer className="bg-gray-100 px-12 py-10 h-[60vh] flex items-center">
+      <div className="max-w-6xl mx-auto w-full">
+        <div className="grid grid-cols-1 text-left">
+          {/* Main Footer Sections */}
+          <div className="flex justify-between flex-wrap gap-12 mb-12">
+            <FooterSection
+              title="ABOUT Diet Tailor"
+              links={[
+                {
+                  title: "Who We Are",
+                  href: "https://www.zomato.com/who-we-are",
+                },
+                { title: "Blog", href: "https://blog.zomato.com/" },
+                {
+                  title: "Work With Us",
+                  href: "https://www.zomato.com/careers",
+                },
+                {
+                  title: "Investor Relations",
+                  href: "https://www.zomato.com/investor-relations",
+                },
+              ]}
             />
-            <ul className="flex flex-wrap gap-5">
+            <FooterSection
+              title="Diet Tailor "
+              links={[
+                { title: "Zomato", href: "https://www.zomato.com/" },
+                { title: "Blinkit", href: "https://blinkit.com/" },
+                {
+                  title: "Feeding India",
+                  href: "https://www.feedingindia.org/",
+                },
+              ]}
+            />
+            <FooterSection
+              title="FOR RESTAURANTS"
+              links={[
+                {
+                  title: "Partner With Us",
+                  href: "https://www.zomato.com/partner-with-us",
+                },
+                {
+                  title: "Apps For You",
+                  href: "https://play.google.com/store/apps",
+                },
+              ]}
+            />
+            <FooterSection
+              title="LEARN MORE"
+              links={[
+                {
+                  title: "Privacy",
+                  href: "https://www.zomato.com/policies/privacy/",
+                },
+                {
+                  title: "Security",
+                  href: "https://www.zomato.com/policies/security/",
+                },
+                {
+                  title: "Terms",
+                  href: "https://www.zomato.com/policies/terms/",
+                },
+              ]}
+            />
 
-              <li>
-                <Text
-                  as="p"
-                  className="font-manrope text-[16px] font-normal tracking-[-0.75px] text-white-a700_cc"
-                >
-                  <Link href="Pricing" target="_blank" rel="noreferrer">
-                    About
-                  </Link>
-                </Text>
-              </li>
-              <li>
-                <Text
-                  as="p"
-                  className="font-manrope text-[16px] font-normal tracking-[-0.75px] text-white-a700_cc"
-                >
-                  <Link href="Blogs" target="_blank" rel="noreferrer">
-                    Services
-                  </Link>
-                </Text>
-              </li>
-              <li>
-                <Text
-                  as="p"
-                  className="font-manrope text-[16px] font-normal tracking-[-0.75px] text-white-a700_cc"
-                >
-                  <Link href="Careers" target="_blank" rel="noreferrer">
-                    How it works
-                  </Link>
-                </Text>
-              </li>
-              <li>
-                <Text
-                  as="p"
-                  className="font-manrope text-[16px] font-normal tracking-[-0.75px] text-white-a700_cc"
-                >
-                  <Link href="About" target="_blank" rel="noreferrer">
-                    Fodd menu
-                  </Link>
-                </Text>
-              </li>
-              <li>
-                <Text
-                  as="p"
-                  className="font-manrope text-[16px] font-normal tracking-[-0.75px] text-white-a700_cc"
-                >
-                  <Link href="#">Contact Us</Link>
-                </Text>
-              </li>
-            </ul>
-          </div>
-          <div className="flex justify-between gap-5">
-            <Text
-              size="textxs"
-              as="p"
-              className="font-manrope text-[12px] font-normal tracking-[0.25px] text-white-a700_cc"
-            >
-              © 2023 Diet Tailor. All rights reserved.
-            </Text>
-            <div className="flex gap-5">
-              <Img
-                src="img_trash.svg"
-                width={18}
-                height={16}
-                alt="Trash Icon"
-                className="h-[16px]"
-              />
-              <Img
-                src="img_facebook.svg"
-                width={16}
-                height={16}
-                alt="Facebook Icon"
-                className="h-[16px]"
-              />
-              <Img
-                src="img_link.svg"
-                width={16}
-                height={16}
-                alt="LinkedIn Icon"
-                className="h-[16px]"
-              />
+            {/* Social and App Store Section */}
+            <div className="flex flex-col gap-2">
+              <div>
+                <h4 className="text-sm font-bold mb-4">SOCIAL LINKS</h4>
+                <div className="flex gap-2 mb-6">
+                  <SocialIcon
+                    href="https://linkedin.com/"
+                    src="/images/social-media/linkedin.png"
+                    alt="LinkedIn"
+                  />
+                  <SocialIcon
+                    href="https://youtube.com/"
+                    src="/images/social-media/youtube.png"
+                    alt="YouTube"
+                  />
+                  <SocialIcon
+                    href="https://facebook.com/"
+                    src="/images/social-media/facebook.png"
+                    alt="Facebook"
+                  />
+                  <SocialIcon
+                    href="https://twitter.com/"
+                    src="/images/social-media/twitter.png"
+                    alt="Twitter"
+                  />
+                  <SocialIcon
+                    href="https://instagram.com/"
+                    src="/images/social-media/instagram.png"
+                    alt="Instagram"
+                  />
+                </div>
+              </div>
+
+              {/* Play Store and App Store (Stacked) */}
+              <div className="flex flex-col items-start gap-4">
+                <Link href="https://play.google.com" target="_blank">
+                  <Image
+                    src="/images/social-media/play_store.webp"
+                    alt="Play Store"
+                    width={140}
+                    height={45}
+                    className="cursor-pointer"
+                  />
+                </Link>
+                <Link href="https://www.apple.com/app-store/" target="_blank">
+                  <Image
+                    src="/images/social-media/app_store.webp"
+                    alt="App Store"
+                    width={140}
+                    height={45}
+                    className="cursor-pointer"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
+        </div>
+
+        <hr className="border-t border-gray-300 my-8" />
+
+        {/* Copyright */}
+        <div className="text-left text-gray-600 text-sm">
+          <p className="font-montserrat2">
+            By continuing past this page, you agree to our Terms of Service,
+            Cookie Policy, Privacy Policy and Content Policies. All trademarks
+            are properties of their respective owners. © Diet Tailor. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>
   );
-}
+};
+
+// Footer Section Component
+const FooterSection = ({ title, links }) => (
+  <div className="">
+    <h4 className="text-sm font-bold tracking-wide mb-4">{title}</h4>
+    {links.map((link, index) => (
+      <FooterLink key={index} title={link.title} href={link.href} />
+    ))}
+  </div>
+);
+
+// Footer Link Component
+const FooterLink = ({ title, href }) => (
+  <p className="mb-2 font-montserrat2 text-sm">
+    <Link href={href} className="text-gray-700 hover:underline">
+      {title}
+    </Link>
+  </p>
+);
+
+// Social Icon Component
+const SocialIcon = ({ href, src, alt }) => (
+  <Link href={href} target="_blank">
+    <Image
+      src={src}
+      alt={alt}
+      width={23}
+      height={23}
+      className="cursor-pointer"
+    />
+  </Link>
+);
+
+export default Footer;

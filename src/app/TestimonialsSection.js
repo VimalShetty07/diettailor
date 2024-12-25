@@ -13,54 +13,57 @@ export default function TestimonialsSection() {
   // Slider content data
   const sliderContent = [
     {
-      clientImage: "img_client_image.png",
+      clientImage: "special_menu/muscle_gain.jpg",
       testimonial:
-        "I am incredibly impressed with the transformative technology solutions provided by FutureSphere. Their cutting-edge innovations have revolutionized our business operations, streamlining processes and boosting productivity. The seamless connectivity and intuitive user interface have made a significant impact on our team's efficiency. Thanks to their advanced data analytics capabilities, we now make data-driven decisions with confidence. I highly recommend FutureSphere to any organization seeking to stay ahead in the digital era.",
-      clientName: "Sarah Thompson",
-      clientRole: "CEO Thompson Enterprises",
+        "1. Increase Protein Intake: Include high-quality proteins like chicken, fish, eggs, tofu, Greek yogurt, lentils, and protein shakes to support muscle repair and growth. Aim for 1.6-2.2 grams of protein per kilogram of body weight daily.<br/> 2. Focus on Complex Carbohydrates: Eat whole grains (brown rice, oats, quinoa), sweet potatoes, and legumes to provide energy for workouts and muscle recovery. <br/> 3. Healthy Fats: Include sources like avocado, nuts, seeds, olive oil, and fatty fish (salmon) to support hormone production and provide calorie-dense nutrition.<br/>4. Eat Frequent Meals: Space meals every 3-4 hours to keep your body fueled and provide a steady supply of nutrients for muscle repair.<br/> 5. Stay Hydrated: Drink plenty of water to support muscle function and recovery, especially during and after workouts.<br/>6. Don’t Skip Post-Workout Nutrition: Consume a protein-rich meal or shake with some fast-digesting carbs (e.g., banana, rice cakes) within 30-60 minutes post-workout to maximize muscle repair.",
+      clientName: "Muscle gain",
+      clientRole: "Tips for muscle gain:",
     },
     {
-      clientImage: "img_client_image.png",
+      clientImage: "special_menu/diabetes.jpg",
       testimonial:
-        "FutureSphere has truly redefined the way we approach technology. Their innovative solutions have allowed us to automate key processes and improve overall efficiency. The user interface is intuitive and easy to navigate, and their customer support is exceptional. We’ve seen measurable improvements in productivity, and I can confidently say that FutureSphere has played a key role in our success.",
-      clientName: "John Davis",
-      clientRole: "CTO Global Tech Solutions",
+        "1. Choose low-GI foods: Foods like lentils, quinoa, oats, and most non-starchy vegetables release glucose slowly.<br/> 2. Include fiber: Aim for at least 25-30g of fiber daily from vegetables, fruits (berries, apples), legumes, and whole grains.<br/> 3. Healthy fats: Include nuts, seeds, olive oil, and fatty fish to improve heart health.<br/> 4. Avoid refined carbs and sugars: Limit white bread, pasta, sugary drinks, and desserts.<br/> 5. Stay hydrated: Drink plenty of water, and limit sugary beverages.",
+      clientName: "Diabetes",
+      clientRole: "Key Tips for Managing Diabetes Through Diet",
     },
     {
-      clientImage: "img_client_image.png",
+      clientImage: "special_menu/pcod.jpg",
       testimonial:
-        "Partnering with FutureSphere has been one of the best business decisions we’ve made. Their advanced AI-powered solutions have streamlined our operations and provided us with valuable insights that were previously inaccessible. Their team is highly skilled and responsive, ensuring smooth implementation and ongoing support. I would highly recommend FutureSphere to any company looking to innovate and grow.",
-      clientName: "Emily Roberts",
-      clientRole: "Founder & CEO InnovateX",
+        "1. Avoid refined carbs and sugars: Replace white bread, pastries, and sugary drinks with whole grains and natural sweeteners like stevia.<br/> 2. Focus on low-GI foods: Foods that release glucose slowly (like oats, quinoa, and legumes) help stabilize insulin.<br/> 3. Include anti-inflammatory foods: Fatty fish, nuts, seeds, turmeric, and green leafy vegetables.<br/> 4. Stay hydrated: Drink plenty of water, herbal teas, or detox waters infused with cucumber and mint.<br/> 5. Limit dairy if sensitive: Substitute with almond or coconut milk to reduce potential inflammation.",
+      clientName: "PCOD",
+      clientRole: "Tips for Managing PCOD Through Diet",
+    },
+    {
+      clientImage: "special_menu/periods.jpg",
+      testimonial:
+        "1. Increase Anti-Inflammatory Foods: Include fatty fish (salmon, mackerel), nuts, seeds, ginger, turmeric, and leafy greens to reduce inflammation.<br/> 2. Consume Magnesium-Rich Foods: Opt for avocados, bananas, almonds, cashews, and spinach to relax muscles and ease cramps.<br/> 3. Focus on Calcium and Vitamin D: Eat dairy (or alternatives like almond milk), tofu, broccoli, and sesame seeds to support muscle relaxation and hormonal balance.<br/> 4. Stay Hydrated and Limit Caffeine: Drink plenty of water, herbal teas (chamomile, ginger), and avoid caffeine to reduce bloating and discomfort.<br/> 5. Opt for Complex Carbs and Fiber: Choose whole grains, sweet potatoes, and legumes to stabilize blood sugar and prevent energy crashes.<br/> 6. Avoid Processed Foods and Sugars: Reduce intake of refined carbs, sugary snacks, and processed foods to minimize inflammation and bloating.",
+      clientName: "Period cramp",
+      clientRole: "Dietary tips to manage period cramp pain",
+    },
+    {
+      clientImage: "special_menu/weight_loss.jpg",
+      testimonial:
+        "1. Focus on High-Protein Meals: Include lean proteins like chicken, fish, eggs, tofu, and legumes to boost metabolism and keep you feeling full.<br/> 2. Increase Fiber Intake: Eat plenty of vegetables, fruits (like berries), whole grains, and seeds to promote satiety and support digestion.<br/> 3. Limit Refined Carbs and Sugars: Replace white bread, pasta, and sugary snacks with whole grains like quinoa, oats, and brown rice.<br/> 4. Stay Hydrated: Drink plenty of water throughout the day and replace sugary drinks with herbal teas or infused water.<br/> 5. Practice Portion Control: Use smaller plates, measure portions, and avoid overeating by listening to your body's hunger cues.<br/> 6. Incorporate Healthy Fats: Add moderate amounts of avocado, nuts, seeds, and olive oil to meals for better satiety and hormone regulation.",
+      clientName: "Weight loss",
+      clientRole: "Dietary tips for weight loss",
     },
   ];
-
   return (
     <>
-      {/* Testimonials Section (Full Page) */}
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        <div className="container-xs flex flex-col items-center gap-2.5 px-5">
-          <div className="flex w-[42%] flex-col items-center gap-2.5 md:w-full">
-            <div className="relative h-[30px] w-[60%] content-center rounded-[14px] border border-solid border-deep_purple-50_01 bg-gradient md:h-auto">
-              <Text
-                as="p"
-                className="absolute bottom-0 left-0 right-0 top-0 m-auto h-max w-max font-manrope text-[16px] font-normal tracking-[-0.75px] text-primary-purple_normal"
-              >
-                Blockbuster Meal Menu
-              </Text>
-            </div>
-
+      <div className="flex flex-col items-center justify-center h-[100vh] min-h-screen">
+        <div className="container-xs flex flex-col items-center h-[100vh] gap-2.5 ">
+          <div className="flex w-[80%] py-5 flex-col items-center gap-2.5 md:w-full">
             <Heading
               as="p"
               className="text-[48px] font-normal tracking-[-3.83px] text-gray-900_01 md:text-[44px] sm:text-[38px]"
             >
-              Nutritious Meal Options
+              Key tips for managing diseases through diet
             </Heading>
           </div>
 
           {/* Slider Section */}
           <div className="flex flex-col gap-[50px] self-stretch">
-            <div className="relative h-[446px] content-center md:h-auto">
+            <div className="relative h-[80vh] content-center md:h-auto">
               <div className="mx-auto flex w-full">
                 <Slider
                   autoPlay
@@ -88,13 +91,6 @@ export default function TestimonialsSection() {
                         />
                         <div className="flex w-[46%] flex-col items-end gap-3.5 md:w-full">
                           <div className="flex flex-col gap-4 self-stretch">
-                            <Text
-                              size="texts"
-                              as="p"
-                              className="text-[16px] font-normal leading-[19px] tracking-[-0.96px] text-blue_gray-400"
-                            >
-                              {slide.testimonial}
-                            </Text>
                             <div className="flex flex-col items-start">
                               <Text
                                 size="textlg"
@@ -111,6 +107,15 @@ export default function TestimonialsSection() {
                                 {slide.clientRole}
                               </Heading>
                             </div>
+
+                            <Text
+                              size="texts"
+                              as="p"
+                              className="text-[16px] font-normal leading-[19px] tracking-[-0.96px] text-blue_gray-400"
+                              dangerouslySetInnerHTML={{
+                                __html: slide.testimonial,
+                              }}
+                            />
                           </div>
                         </div>
                       </div>
@@ -128,9 +133,13 @@ export default function TestimonialsSection() {
                   onClick={() => {
                     sliderRef?.current?.slidePrev();
                   }}
-                  className="w-[54px] rotate-[-180deg] rounded-[26px] !border px-4"
+                  className="w-[54px] rounded-[26px] !border px-4"
                 >
-                  <Img src="img_arrow_right_deep_purple_a200.svg" width={20} height={20} />
+                  <Img
+                    src="img_arrow_right_deep_purple_a200.svg"
+                    width={20}
+                    height={20}
+                  />
                 </Button>
 
                 <Button
@@ -141,7 +150,11 @@ export default function TestimonialsSection() {
                   }}
                   className="w-[54px] rounded-[26px] px-4"
                 >
-                  <Img src="img_arrow_right_white_a700.svg" width={20} height={20} />
+                  <Img
+                    src="img_arrow_right_white_a700.svg"
+                    width={20}
+                    height={20}
+                  />
                 </Button>
               </div>
             </div>

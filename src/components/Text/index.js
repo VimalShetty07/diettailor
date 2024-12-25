@@ -20,7 +20,7 @@ const Text = ({
   const Component = as || "p";
   return (
     <Component 
-      className={`text-blue_gray-400 font-manrope ${className} ${sizes[size]}`} 
+      className={`${className} ${sizes[size]}`} 
       {...restProps}
     >
       {children}

@@ -19,6 +19,27 @@
   src: url('/fonts/Montserrat/Montserrat-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Montserrat SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/Montserrat/Montserrat-ExtraBold.ttf');
+}
+
 body {
   font-family: 'Montserrat Regular', sans-serif;
 }

@@ -24,7 +24,12 @@ export default function Header({ ...props }) {
   return (
     <header
       {...props}
-      className={`${props.className} flex flex-row justify-between items-center px-5 py-3 bg-gray-900_01 rounded-[28px] shadow-lg`}
+      className={`${props.className} flex flex-row relative  justify-between items-center px-5 py-3 sm:rounded-[28px] shadow-lg`}
+      style={{
+        background: 'rgba(25, 25, 25, 0.7)',
+        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
+        border: '1px solid rgba(255, 255, 255, 0.18)',
+      }}
     >
       {/* Logo */}
       <Img
@@ -36,13 +41,13 @@ export default function Header({ ...props }) {
       />
 
       {/* Desktop Navigation */}
-      <ul className="sc:hidden flex flex-wrap gap-10">
+      <ul className="sc:hidden flex flex-wrap ">
         {["Home", "About", "How it works", "Services"].map((item, index) => (
           <li key={index}>
             <Link href="#">
               <Text
                 as="p"
-                className="font-manrope text-[16px] font-normal tracking-[-0.75px] text-white"
+                className="font-manrope text-[16px] font-normal px-12 tracking-[-0.75px] !text-[#ffffff]"
               >
                 {item}
               </Text>
@@ -145,7 +150,7 @@ export default function Header({ ...props }) {
         shape="round"
         className="sc:hidden flex min-w-[136px] px-[30px] tracking-[-0.96px]"
       >
-        Get App
+        Download App
       </Button>
     </header>
   );

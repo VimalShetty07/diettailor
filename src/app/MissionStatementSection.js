@@ -18,7 +18,7 @@ export default function MissionStatementSection() {
                             <div className="flex flex-col items-start gap-5">
 
                                 {/* Section Label */}
-                                <div className="relative h-[30px] w-[38%] content-center rounded-[14px] border border-solid border-deep_purple-50_01 bg-gradient md:h-auto">
+                                {/* <div className="relative h-[30px] w-[38%] content-center rounded-[14px] border border-solid border-deep_purple-50_01 bg-gradient md:h-auto"> */}
                                     {/* <Img
                                         src="img_noise_30x194.png"
                                         width={194}
@@ -26,13 +26,13 @@ export default function MissionStatementSection() {
                                         alt="Noise Image"
                                         className="h-[30px] flex-1 object-cover opacity-50"
                                     /> */}
-                                    <Text
+                                    {/* <Text
                                         as="p"
                                         className="absolute bottom-0 left-0 right-0 top-0 m-auto h-max w-max font-manrope text-[16px] font-normal tracking-[-0.75px] text-primary-purple_normal"
                                     >
                                         Our Mission Statement
-                                    </Text>
-                                </div>
+                                    </Text> */}
+                                {/* </div> */}
 
                                 {/* Title */}
                                 <Text
@@ -40,7 +40,7 @@ export default function MissionStatementSection() {
                                     as="p"
                                     className="w-full text-[36px] font-normal leading-[43px] tracking-[-0.96px] text-gray-900_01 md:text-[34px] sm:text-[32px]"
                                 >
-                                    Tailored Nutrition Plans to Fit Your Lifestyle and Goals
+                                    Who are we?
                                 </Text>
 
                                 {/* Description */}
@@ -53,7 +53,6 @@ export default function MissionStatementSection() {
 
                                     Our program is tailored to fit your lifestyle and preferences, providing balanced, nutrition-packed meals that match your specific requirements. Whether you're looking for a keto diet, high-protein meals, low-fat options, or high-carbohydrate solutions, we’ve got it covered. We also offer plant-based protein meals and meat options to accommodate a wide range of dietary choices.
 
-                                    At Diet Teller, we believe that good nutrition should be accessible and convenient. Our mission is to help you optimize your health without the hassle of meal planning and preparation. With meals that cater to various fitness levels and dietary preferences, we empower you to take control of your nutrition, one delicious bite at a time.
                                 </Text>
                             </div>
 
