@@ -66,6 +66,7 @@ const Footer = () => {
               ]}
             />
 
+
             {/* Social and App Store Section */}
             <div className="flex flex-col gap-2">
               <div>
